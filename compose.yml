@@ -1,0 +1,5 @@
+version: "3.8"
+
+services:
+  cpu:
+    build: python3.11-pytorch2.1.0-cpu

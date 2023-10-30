@@ -13,14 +13,11 @@ jobs:
       matrix:
         include:
           - image: quozul/rocm-ml
-            context: python3.9-pytorch2.1.0-cpu
-            dockerfile: ./python3.9-pytorch2.1.0-cpu/Dockerfile
+            context: python3.11-pytorch2.1.0-cpu
+            dockerfile: ./python3.11-pytorch2.1.0-cpu/Dockerfile
           - image: quozul/rocm-ml
-            context: python3.9-pytorch2.1.0-rocm5.6
-            dockerfile: ./python3.9-pytorch2.1.0-rocm5.6/Dockerfile
-          - image: quozul/rocm-ml
-            context: python3.12-alpine-pytorch2.1.0-rocm5.6
-            dockerfile: ./ppython3.12-alpine-pytorch2.1.0-rocm5.6/Dockerfile
+            context: python3.11-pytorch2.1.0-rocm5.6
+            dockerfile: ./python3.11-pytorch2.1.0-rocm5.6/Dockerfile
 
     steps:
       - name: Check out the repo
